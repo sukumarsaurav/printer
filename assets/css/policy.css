@@ -1,0 +1,42 @@
+/* Common styles for refund-policy.php and other policy pages */
+.policy-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.policy-section {
+    margin-bottom: 3rem;
+}
+
+.policy-section h2 {
+    color: var(--heading-color);
+    margin-bottom: 1.5rem;
+}
+
+.policy-section p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.policy-list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.policy-list li {
+    margin-bottom: 0.5rem;
+}
+
+.policy-contact {
+    background: var(--background-alt);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin-top: 2rem;
+}
+
+.last-updated {
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 2rem;
+} 
