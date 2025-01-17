@@ -2,9 +2,9 @@
 session_start();
 
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'modern_ecommerce');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_NAME', 'u911550082_eshop');
+define('DB_USER', 'u911550082_eshop');
+define('DB_PASS', 'l*9O^:t+l*');
 
 try {
     $pdo = new PDO(

@@ -1,0 +1,82 @@
+.account-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+}
+
+.account-sidebar {
+    background: var(--background);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.account-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.account-nav a {
+    padding: 0.75rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: var(--border-radius-sm);
+    transition: background-color 0.3s ease;
+}
+
+.account-nav a:hover,
+.account-nav a.active {
+    background: var(--primary-light);
+    color: var(--primary);
+}
+
+.account-content {
+    background: var(--background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.account-section {
+    margin-bottom: 2rem;
+}
+
+.order-history {
+    margin-top: 2rem;
+}
+
+.order-card {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .account-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .account-sidebar {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .account-nav {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+    }
+} 
